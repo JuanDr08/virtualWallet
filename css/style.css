@@ -60,10 +60,6 @@ body {
     font-size: 3em;
     color: var(--color-ternario);
 }
-
-.main_titulo {
-    /* background: red; */
-}
 .titulo_card {
     /* background: green; */
     display: flex;
@@ -112,9 +108,6 @@ body {
     font-size: 1.3em;
     font-family: "SF-Pro-Text-Bold";
 }
-
-
-
 .balance_one progress[value] {
     --color: var(--color-secundary);
     --background: var(--color-ternario);
@@ -152,6 +145,52 @@ progress[value]::-moz-progress-bar {
     border-radius: 10em;
     background: var(--color);
 }
+.actividades {
+    background: var(--color-ternario);
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding: 30px 40px 0px 40px;
+}
+.actividades h4 {
+    padding-bottom: 10px;
+    color: var(--color-primary);
+    font-family: "SF-Pro-Text-Bold";
+    text-transform: capitalize;
+}
+.activities {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15%;
+}
+.acnt,
+.prvcy,
+.hlp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-ternario) ;
+    height: max-content;
+    text-align: center;
+    color: var(--color-primary);
+    text-transform: capitalize;
+    font-family: "SF-Pro-Text-Semibold";
+    height: 120px;
+    width: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 0 30px rgba(182, 179, 179, 0.418);
+    margin: 0 5px;
+}
+.acnt img,
+.prvcy img,
+.hlp img {
+    padding-bottom: 5px;
+    width: 40px;
+}
+
+
+
+
 
 .footer {
     width: 100%;
