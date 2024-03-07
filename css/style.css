@@ -17,6 +17,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: -2;
 }
 .banner img {
     width: 100%;
@@ -150,12 +151,14 @@ progress[value]::-moz-progress-bar {
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     padding: 30px 40px 0px 40px;
+    height: 63vh;
 }
 .actividades h4 {
     padding-bottom: 10px;
     color: var(--color-primary);
     font-family: "SF-Pro-Text-Bold";
     text-transform: capitalize;
+    font-size: 1.3em;
 }
 .activities {
     display: flex;
@@ -180,6 +183,7 @@ progress[value]::-moz-progress-bar {
     border-radius: 15px;
     box-shadow: 5px 0 30px rgba(182, 179, 179, 0.418);
     margin: 0 5px;
+    font-size: 1.3em;
 }
 .acnt img,
 .prvcy img,
@@ -187,6 +191,64 @@ progress[value]::-moz-progress-bar {
     padding-bottom: 5px;
     width: 40px;
 }
+
+.transactions {
+    overflow: scroll;
+    height: 23vh;
+    border: 1px solid black;
+}
+
+.alza {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.alz-izq-logo {
+    display: flex;
+}
+.alz-izq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alz-izq h5,
+.alz-der h5,
+.bja-izq h5,
+.bja-der h5{
+    color: var(--color-primary);
+    font-family: "SF-Pro-Text-Bold";
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+
+.bja-izq small,
+.bja-der small,
+.alz-izq small,
+.alz-der small {
+    color: var(--color-cuarto);
+    text-transform: capitalize;
+    font-family: "SF-Pro-Text-Medium";
+    font-size: .8em;
+    margin-top: 1vh;
+}
+
+.baja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bja-izq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bja-izq-logo {
+    display: flex;
+}
+
+
+
 
 
 
