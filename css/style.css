@@ -7,7 +7,7 @@
     font-family: "SF-Pro-Text-Regular";
 }
 
-body {
+.body_1 {
     background: var(--color-primary);
     position: relative;
     width: 100vw;
@@ -60,7 +60,7 @@ body {
 }
 .main {
     position: relative;
-    height: 100vh;
+    height: 84vh;
 }
 .main_titulo {
     height: 40%;
@@ -159,7 +159,7 @@ progress[value]::-moz-progress-bar {
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     padding: 30px 20px 10px 20px;
-    height: 100%;
+    height: 63%;
 }
 .actividades h4 {
     padding-bottom: 10px;
@@ -288,3 +288,10 @@ progress[value]::-moz-progress-bar {
 .footer ul li a img {
     width: 1.5em;
 }
+
+/* Balances page css part */
+
+.body_2 {
+    background: gray;
+}
+
