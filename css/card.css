@@ -1,0 +1,227 @@
+@import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF-Pro-Text-Regular";
+}
+
+.header {
+    width: 100%;
+    padding: 0 .5em;
+    /* height: 60px; */
+    /* background: darkgoldenrod; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height:10vh;
+    position: sticky;
+    top: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+.header_logo {
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logo_icono img {
+    width: 2em;
+}
+.logo_titulo {
+    /* background: orange; */
+    color: var(--color-primary);
+    font-family: "SF-Pro-Text-Bold";
+    text-transform: uppercase;
+}
+
+.header_menu i{
+    font-size: 3em;
+    color: var(--color-primary);
+}
+
+
+.main {
+    width: 100%;
+    display: grid;
+    padding: 0 .8em;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    "investing"
+    "banner"
+    "banner"
+    "cards"
+    "colection"
+    "colection"
+    "colection"
+    "colection"
+    "colection"
+    ;
+    grid-gap: 10px
+}
+
+.main_title1,
+.main_title2 {
+    /* background: red; */
+    grid-area: investing;
+    margin-top: 1em;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-family: "SF-Pro-Text-Bold";
+    color: var(--color-primary);
+
+}
+.main_banner {
+    /* background: orange; */
+    height: 160px;
+    grid-area: banner;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner_public {
+    /* background: red; */
+    display: grid;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.130);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "logo description"
+    ;
+}
+.public_logo {
+    /* background: blue; */
+    background: var(--color-card);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 1000px;
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.public_logo img {
+    /* height: 160px; */
+    width: 100%;
+    padding: 10px;
+}
+
+.public_description {
+    /* background: violet; */
+    grid-area: description;
+    text-align: center;
+}
+.public_description p {
+    font-size: 1.2em;
+    font-family: "SF-Pro-Text-Bold";
+    color: var(--color-primary);
+    margin-top: 20px;
+}
+.public_description small {
+    display: block;
+    font-size: 1em;
+    font-family: "SF-Pro-Text-Regular";
+    color: var(--color-cuarto);
+}
+.public_description button {
+    border: none;
+    padding: 8px 20px;
+    font-size: 1em;
+    border-radius: 50px;
+    background: var(--color-secundary);
+    font-family: "SF-Pro-Text-Bold";
+    text-transform: capitalize;
+    margin-top: 8px;
+    color: var(--color-ternario);
+}
+
+.description_close {
+    width: 100%;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.description_close i {
+    /* background: red; */
+    border-radius: 100%;
+    padding: 5px;
+    background: var(--color-secundary);
+    color: var(--color-ternario);
+}
+.main_title2 {
+    grid-area: cards;
+}
+.main_cards {
+    /* background: green; */
+    grid-area: colection;
+    display: flex;
+    gap: 10px;
+    /* padding: 10px 0; */
+    flex-direction: row;
+    height: 320px;
+    overflow-x: scroll;
+}
+.cards_item {
+    flex: 1;
+    min-width: 200px;
+    background: url(../storage/img/mast.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.cards_item h2 {
+    color: var(--color-ternario);
+    font-family: "SF-Pro-Text-Bold";
+}
+.cards_item small {
+    position: absolute;
+    top: 30px;
+    right: 4vw;
+    color: var(--color-ternario);
+    font-family: "SF-Pro-Text-Semibold";
+}
+
+.cards_item img {
+    width: 35%;
+    position: absolute;
+    bottom: 20px;
+    left: 2vw;
+}
+
+.footer {
+    width: 100%;
+    background: var(--color-primary);
+    position: fixed;
+    bottom: 0;
+    height: 6vh;
+}
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: .5em 0;
+}
+.footer ul li a img {
+    width: 1.5em;
+}

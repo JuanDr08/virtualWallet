@@ -35,7 +35,7 @@
     align-items: center;
     flex-wrap: nowrap;
     height:10vh;
-    position: fixed;
+    position: sticky;
     top: 0;
 }
 .header_logo {
