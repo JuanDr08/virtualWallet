@@ -11,7 +11,7 @@
     background: var(--color-primary);
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
 }
 .banner {
     position: absolute;
@@ -69,7 +69,7 @@
     /* background: green; */
     display: flex;
     flex-direction: column;
-    height: 120px;
+    height: 100px;
     justify-content: center;
     padding: 0 0.5em;
 }
@@ -154,7 +154,6 @@ progress[value]::-moz-progress-bar {
 }
 .actividades {
     overflow: scroll;
-    width: 100%;
     background: var(--color-ternario);
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
@@ -266,7 +265,7 @@ progress[value]::-moz-progress-bar {
     background: var(--color-primary);
     position: fixed;
     bottom: 0;
-    height: 6vh;
+    height: 40px;
 }
 .footer ul {
     display: flex;
@@ -281,4 +280,21 @@ progress[value]::-moz-progress-bar {
 }
 .footer ul li a img {
     width: 1.5em;
+}
+
+
+@media (height <= 629px) {
+    .titulo_card {
+        height: max-content;
+    }
+    .titulo_card h2, .titulo_card p {
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .titulo_balance {
+        height: max-content;
+        font-size: .7em;
+        justify-content: space-around;
+        text-align: center;
+    }
 }

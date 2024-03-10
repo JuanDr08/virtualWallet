@@ -19,10 +19,11 @@
     height:10vh;
     position: sticky;
     top: 0;
+    background: var(--color-ternario);
 }
 body {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
 }
 .header_logo {
     /* background: red; */
@@ -209,7 +210,7 @@ body {
     background: var(--color-primary);
     position: fixed;
     bottom: 0;
-    height: 6vh;
+    height: 40px;
 }
 .footer ul {
     display: flex;
