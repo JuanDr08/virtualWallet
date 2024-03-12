@@ -46,10 +46,13 @@
     font-family: 'SF-Pro-Text-SemiboldItalic';
     src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-SemiboldItalic.otf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-    --color-primary: #33404F;
+    --color-primary: #37153d;
     --color-secundary: #00DDA3;
     --color-ternario: #FFFFFF;
     --color-cuarto: #B5C5C3;
     --color-card: #E1FFEF;
+    --color-back: #803f8c;
 }
