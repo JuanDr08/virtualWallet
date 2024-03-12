@@ -107,13 +107,13 @@
     font-size: 1.3em;
 }
 .balance_one progress[value] {
-    --color: var(--color-secundary);
+    --color: var(--color-back);
     --background: var(--color-ternario);
     background: var(--background);
 }
 
 .balance_two progress[value] {
-    --color: var(--color-cuarto);
+    --color: var(--color-primary);
     --background: var(--color-ternario);
     background: var(--background);
 }

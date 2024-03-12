@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "SF-Pro-Text-Regular";
+    font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -16,14 +16,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    height:10vh;
+    height:10dvh;
     position: sticky;
     top: 0;
-    background: var(--color-ternario);
 }
 body {
     width: 100vw;
     height: 100dvh;
+    background: linear-gradient(to top, #37153d, #803f8c);
 }
 .header_logo {
     /* background: red; */
@@ -31,13 +31,13 @@ body {
     align-items: center;
     gap: 5px;
 }
-.logo_icono img {
-    width: 2em;
+.logo_icono i {
+    font-size: 2em;
+    color: var(--color-primary);
 }
 .logo_titulo {
     /* background: orange; */
-    color: var(--color-primary);
-    font-family: "SF-Pro-Text-Bold";
+    color: var(--color-ternario);
     text-transform: uppercase;
 }
 
@@ -64,7 +64,7 @@ body {
     "colection"
     "colection"
     ;
-    grid-gap: 10px
+    grid-gap: 10px;
 }
 
 .main_title1,
@@ -74,8 +74,7 @@ body {
     margin-top: 1em;
     font-size: 1.5em;
     text-transform: capitalize;
-    font-family: "SF-Pro-Text-Bold";
-    color: var(--color-primary);
+    color: var(--color-ternario);
 
 }
 .main_banner {
@@ -92,7 +91,7 @@ body {
     /* background: red; */
     display: grid;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.130);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.705);
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr;
     grid-template-areas: 
@@ -101,7 +100,6 @@ body {
 }
 .public_logo {
     /* background: blue; */
-    background: var(--color-card);
     border-top-right-radius: 100px;
     border-bottom-right-radius: 1000px;
     grid-area: logo;
@@ -124,26 +122,24 @@ body {
 }
 .public_description p {
     font-size: 1.2em;
-    font-family: "SF-Pro-Text-Bold";
-    color: var(--color-primary);
+    color: var(--color-ternario);
     margin-top: 20px;
 }
 .public_description small {
     display: block;
     font-size: 1em;
-    font-family: "SF-Pro-Text-Regular";
-    color: var(--color-cuarto);
+    color: var(--color-ternario);
 }
 .public_description button {
     border: none;
     padding: 8px 20px;
     font-size: 1em;
     border-radius: 50px;
-    background: var(--color-secundary);
-    font-family: "SF-Pro-Text-Bold";
+    background: var(--color-primary);
     text-transform: capitalize;
     margin-top: 8px;
     color: var(--color-ternario);
+    font-weight: bolder;
 }
 
 .description_close {
@@ -157,8 +153,14 @@ body {
     /* background: red; */
     border-radius: 100%;
     padding: 5px;
-    background: var(--color-secundary);
+    background: var(--color-primary);
     color: var(--color-ternario);
+    font-weight: bolder;
+    transition: 1.5s;
+}
+.description_close i:hover {
+    scale: 2;
+    box-shadow: 0 0 15px var(--color-ternario);
 }
 .main_title2 {
     grid-area: cards;
@@ -176,33 +178,33 @@ body {
 .cards_item {
     flex: 1;
     min-width: 200px;
-    background: url(../storage/img/mast.svg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
+    background: var(--color-primary);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    border-radius: 15px;
 }
 .cards_item h2 {
     color: var(--color-ternario);
-    font-family: "SF-Pro-Text-Bold";
+    text-shadow: 0 0 10px var(--color-ternario);
 }
 .cards_item small {
+    text-shadow: 0 0 10px var(--color-ternario);
     position: absolute;
     top: 30px;
-    right: 4vw;
+    right: 6vw;
     color: var(--color-ternario);
-    font-family: "SF-Pro-Text-Semibold";
 }
 
-.cards_item img {
-    width: 35%;
+.cards_item i {
+    font-size: 5em;
     position: absolute;
-    bottom: 20px;
-    left: 2vw;
+    bottom: 0;
+    left: 5vw;
+    color: var(--color-ternario);
+    text-shadow: 0 0 10px var(--color-ternario);
 }
 
 .footer {
@@ -223,6 +225,13 @@ body {
     list-style: none;
     margin: .5em 0;
 }
-.footer ul li a img {
-    width: 1.5em;
+.footer ul li a i {
+    font-size: 1.5em;
+    color: var(--color-back);
+}
+
+@media (height <= 629px) {
+    body {
+        height: max-content;
+    }
 }
